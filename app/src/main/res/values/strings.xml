@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Turismo Juiz de Fora</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="texto_dialog_sobre">Clicando na atração desejada uma nova janela abrirá no app Google Maps.</string>
+    <string name="texto_dialog_sobre2">Para reclamações, sugestões ou elogios, envie um email para leodompr@prjr.com</string>
+</resources>

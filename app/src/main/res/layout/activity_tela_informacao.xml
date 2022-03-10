@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imagem_tela_informacao"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/texto_nome_tela_informacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Parque Municipal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagem_tela_informacao"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/texto_endereco_tela_informacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Rua x Avenida Y"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/texto_nome_tela_informacao"
+            app:layout_constraintTop_toBottomOf="@+id/texto_nome_tela_informacao" />
+
+
+        <TextView
+            android:id="@+id/texto_descricao_tela_informacao"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:padding="10dp"
+            android:text="O local conta com 4 campos de futebol, 4 quadras, 1 ginásio poliesportivo, 2 bosques, 3 parques infantis, salão de jogo, parque aquático, 2 restaurantes, 4 churrasqueiras, pista de caminhada, estacionamento e 69 unidades habitacionais.  A iniciativa do Parque Municipal surge como mais uma das alternativas à potencialização de atividades turísticas, culturais, esportivas e de lazer na cidade.  Para entrar no local, as pessoas com idade igual ou superior a 12 anos devem apresentar carteira de vacinação ou do aplicativo ConectSUS, que comprove a aplicação da primeira, segunda ou terceira doses contra o coronavírus, de acordo com o calendário de cada faixa etária no município.  As normas sanitárias incluem ainda aferição de temperatura na entrada do parque, uso de máscara durante todo o período de permanência no local, distanciamento mínimo de um metro e meio entre as pessoas e uso de álcool em gel. É terminantemente proibida a entrada de bebida alcoólica no local."
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texto_endereco_tela_informacao" />
+
+        <Button
+            android:id="@+id/btnMapa"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Abrir no Mapa"
+            android:textSize="16sp"
+            app:icon="@drawable/ic_baseline_map_24"
+            app:layout_constraintBottom_toBottomOf="@+id/imagem_tela_informacao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagem_tela_informacao" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

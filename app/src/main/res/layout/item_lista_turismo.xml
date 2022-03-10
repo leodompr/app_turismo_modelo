@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="false"
+    app:cardPreventCornerOverlap="true"
+    android:layout_marginTop="4dp"
+    app:cardCornerRadius="6dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginLeft="4dp"
+    >
+
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:id="@+id/imagem_local_turismo"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="imagem_local"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="4dp"
+        android:backgroundTint="@color/black"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagem_local_turismo" />
+
+    <TextView
+        android:id="@+id/texto_local_turismo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:padding="6dp"
+        android:text="Parque da Lajinha"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/texto_datas_turismo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Segunda à Sexta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/texto_hora_turismo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7:00h - 16:00h"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/texto_datas_turismo"
+        app:layout_constraintTop_toBottomOf="@+id/texto_datas_turismo" />
+
+    <TextView
+        android:id="@+id/texto_valor_turismo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Grátis"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        android:paddingBottom="8dp"
+        app:layout_constraintDimensionRatio="4,4.50"
+        app:layout_constraintStart_toStartOf="@+id/texto_hora_turismo"
+        app:layout_constraintTop_toBottomOf="@+id/texto_hora_turismo" />
+
+    <ImageView
+        android:id="@+id/estrela_turismo"
+        android:layout_width="28dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="264dp"
+        app:layout_constraintBottom_toBottomOf="@+id/texto_valor_turismo"
+        app:layout_constraintStart_toEndOf="@+id/texto_valor_turismo"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:layout_constraintVertical_bias="0.885"
+
+        app:srcCompat="@android:drawable/star_off" />
+
+    <TextView
+        android:id="@+id/texto_avaliacao_turismo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/estrela_turismo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/estrela_turismo"
+        app:layout_constraintTop_toTopOf="@+id/estrela_turismo"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
